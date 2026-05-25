@@ -1,0 +1,99 @@
+:root {
+  --coklat-rempah: #8B5E3C;
+  --hijau-daun: #4CAF50;
+  --kunyit: #F4A300;
+  --putih: #ffffff;
+  --krem: #F8F1EC;
+  --teks: #2E2E2E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: var(--krem);
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(to bottom right, #E7D2B8, #F5F0E4);
+  color: var(--coklat-rempah);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.login-left h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.login-left p {
+  font-size: 1.2rem;
+  max-width: 400px;
+}
+
+.login-right {
+  flex: 1;
+  background-color: var(--krem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-login h2 {
+  font-size: 2rem;
+  color: var(--coklat-rempah);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-login input {
+  padding: 12px 18px;
+  border: none;
+  border-bottom: 2px solid var(--coklat-rempah);
+  background-color: transparent;
+  font-size: 1rem;
+  color: var(--teks);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-login input:focus {
+  border-color: var(--hijau-daun);
+}
+
+.form-login button {
+  background-color: var(--hijau-daun);
+  color: var(--putih);
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-login button:hover {
+  background-color: var(--kunyit);
+}

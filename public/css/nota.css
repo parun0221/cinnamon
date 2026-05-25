@@ -1,0 +1,313 @@
+.nota {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #000;
+    padding: 24px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* HEADER */
+.nota-header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.nota-toko {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.nota-alamat {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.nota-judul {
+    margin-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* INFO */
+.nota-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* TABLE */
+.nota-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.nota-table th,
+.nota-table td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.nota-table th {
+    background: #f2f2f2;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/* FOOTER */
+.nota-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nota-terima {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+
+/* PRINT MODE */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .nota, .nota * {
+        visibility: visible;
+    }
+
+    .nota {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    button {
+        display: none !important;
+    }
+}
+
+.faktur {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+/* HEADER */
+.faktur-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faktur-left {
+    display: flex;
+    gap: 15px;
+}
+
+.faktur-logo {
+    width: 70px;
+    height: auto;
+}
+
+.faktur-right h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+/* INFO */
+.faktur-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.faktur-info-right p {
+    text-align: right;
+}
+
+/* TABLE */
+.faktur-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faktur-table th,
+.faktur-table td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.faktur-table thead th {
+    background: #f2b6b6;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* NOTE */
+.faktur-note {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.faktur-note ul {
+    padding-left: 18px;
+}
+
+/* FAKTUR CSS */
+
+/* body {
+    font-family: DejaVu Sans, Arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+} */
+
+.faktur {
+    width: 100%;
+}
+
+.faktur-logo {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.faktur-title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.divider {
+    border: 1px solid #999;
+    margin: 15px 0;
+}
+
+/* TABLE UMUM */
+table {
+    border-collapse: collapse;
+}
+
+/* INFO */
+.faktur-info-table td {
+    padding: 5px 0;
+}
+
+/* TABLE PRODUK */
+.faktur-table {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.faktur-table th,
+.faktur-table td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.faktur-table th {
+    background: #f2bcbc;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* CATATAN */
+.faktur-note {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+
+/* ===============================
+   MODAL FAKTUR PENJUALAN
+================================ */
+
+.nota-modal {
+    max-width: 850px;          /* lebar ideal A4 portrait */
+    width: 95%;
+}
+
+.nota-modal .modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* HEADER */
+.nota-modal .modal-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 14px 20px;
+}
+
+.nota-modal .modal-title {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* BODY */
+.nota-modal .modal-body {
+    padding: 20px;
+    max-height: calc(100vh - 180px); /* 🔥 ini kunci */
+    overflow-y: auto;
+    background: #fff;
+}
+
+/* FOOTER */
+.nota-modal .modal-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 12px 20px;
+}
+
+/* tombol print */
+#btnPrintPdf {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nota-modal {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .nota-modal .modal-body {
+        padding: 14px;
+    }
+}
